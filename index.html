@@ -5,86 +5,156 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Siekoll – SIE-export och kontroll för bokföring i Google Sheets</title>
 <meta name="description" content="Tillägg till Google Sheets som hittar felen i din bokföring och gör en SIE-fil som Fortnox, Visma, Bokio och din konsult läser in. Gratis kontroll och mall.">
+<link rel="canonical" href="https://siekoll.se/">
+<link rel="preload" href="assets/fonts/instrument-sans-normal-400-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="assets/favicon.png">
 </head>
 <body>
 <a class="skip" href="#innehall">Hoppa till innehållet</a>
-<header class="top">
-  <div class="inner">
+<header class="site-header">
+  <div class="container">
     <a class="brand" href="index.html"><img class="mark" src="assets/mark.svg" alt="" width="28" height="28">Siekoll</a>
-    <nav class="main" aria-label="Huvudmeny">
+    <nav class="nav" aria-label="Huvudmeny">
       <a href="bokforing-i-google-kalkylark.html">Guide</a>
       <a href="bokforing-for-forening.html">Förening</a>
       <a href="integritet.html">Integritet</a>
     </nav>
+    <a class="btn primary header-action" href="#installera">Installera</a>
   </div>
 </header>
 <main id="innehall">
-  <h1>Bokför i Google Sheets. Lämna över som SIE-fil.</h1>
-  <p class="lead">Siekoll är ett tillägg till Google Sheets som hittar felen i din bokföring och gör en SIE-fil som Fortnox, Visma, Bokio, Björn Lundén och din redovisningskonsult läser in direkt.</p>
-  <div class="actions">
-    <a class="btn" href="#installera">Installera i Google Sheets</a>
-    <a class="btn secondary" href="bokforing-i-google-kalkylark.html">Hämta den gratis mallen</a>
-  </div>
-  <p class="note">Fungerar i vilket kalkylark som helst som har rubrikerna Vernr, Datum, Text, Konto, Debet och Kredit.</p>
-
-  <h2>Så fungerar det</h2>
-  <ol>
-    <li>Lägg verifikationerna i ett blad, en rad per konteringsrad. Mallen har rätt rubriker och två exempel.</li>
-    <li>Klicka på <strong>Kontrollera</strong>. Du får en lista, rad för rad: datum som inte går att läsa, konton som inte är fyrsiffriga, verifikationer som inte balanserar, nummer som saknas eller hoppar.</li>
-    <li>Klicka på <strong>Exportera</strong>. Filen (.si) laddas ner och kan läsas in i bokföringsprogrammet eller skickas till konsulten.</li>
-  </ol>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Gratis</h3>
-      <ul>
-        <li>Kontroll av bladet, så många gånger du vill</li>
-        <li>Mallblad med rätt rubriker och exempel</li>
-        <li>Läs in en SIE-fil som ett blad</li>
-        <li>Kontroll av personnummer, organisationsnummer och OCR-nummer</li>
-        <li>Export av filer med upp till 20 verifikationer</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Licens</h3>
-      <p class="price">19 USD per år</p>
-      <p class="note">Cirka 199 kr. Moms läggs till vid köpet.</p>
-      <ul>
-        <li>Export utan gräns för antal verifikationer</li>
-        <li>Gäller för dig, i upp till tre webbläsare</li>
-        <li>Ångerrätt 14 dagar</li>
-      </ul>
-      <div class="actions">
-        <a class="btn" href="https://sheetgrab.lemonsqueezy.com/checkout/buy/f310b253-16b0-4034-ae06-d1597c43288b" rel="noopener" data-checkout>Köp licens</a>
+  <section class="section hero soft">
+    <div class="container split even">
+      <div>
+        <h1 class="enter">Bokför i Google Sheets. Lämna över som SIE-fil.</h1>
+        <p class="lead enter d1">Siekoll är ett tillägg till Google Sheets som hittar felen i din bokföring och gör en SIE-fil som Fortnox, Visma, Bokio, Björn Lundén och din redovisningskonsult läser in direkt.</p>
+        <div class="actions enter d2">
+          <a class="btn primary" href="#installera">Installera i Google Sheets</a>
+          <a class="btn secondary" href="bokforing-i-google-kalkylark.html">Hämta den gratis mallen</a>
+        </div>
+        <p class="note enter d3">Fungerar i vilket kalkylark som helst som har rubrikerna Vernr, Datum, Text, Konto, Debet och Kredit.</p>
       </div>
-      <p class="note">Köpet sker hos Lemon Squeezy. Nyckeln kommer med kvittot och klistras in under Export i panelen.</p>
+      <figure class="frame hero-figure enter d2">
+        <img src="assets/panel-kontroll.webp" alt="Google Sheets med ett bokföringsblad och Siekolls panel till höger. Panelen visar: Blad SIE-import 20261020: 2 verifikationer, 6 rader. Debet 13 500,00 kr, kredit 13 500,00 kr. Inga fel." width="1536" height="738">
+      </figure>
     </div>
-  </div>
+  </section>
 
-  <h2 id="installera">Installera</h2>
-  <p>Siekoll finns på Google Workspace Marketplace. Öppna ett kalkylark, välj <strong>Tillägg → Hämta tillägg</strong> och sök på Siekoll, eller använd knappen nedan.</p>
-  <div class="actions">
-    <a class="btn" href="#" data-marketplace>Öppna i Google Workspace Marketplace</a>
-  </div>
-  <p class="note">Tillägget ber bara om att läsa och skriva i det kalkylark där det körs, visa sin panel och kontakta licensservern. Inga andra behörigheter.</p>
+  <section class="section">
+    <div class="container">
+      <h2>Så fungerar det</h2>
+      <div class="grid cols-3">
+        <div class="card step-card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5h17v15h-17z"/><path d="M3.5 9.6h17M9.2 9.6v9.9M3.5 14.4h17"/></svg>
+          <p>Lägg verifikationerna i ett blad, en rad per konteringsrad. Mallen har rätt rubriker och två exempel.</p>
+        </div>
+        <div class="card step-card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2a8.8 8.8 0 1 0 .3 0"/><path d="M8.2 12.4l2.6 2.6 5.2-5.6"/></svg>
+          <p>Klicka på <strong>Kontrollera</strong>. Du får en lista, rad för rad: datum som inte går att läsa, konton som inte är fyrsiffriga, verifikationer som inte balanserar, nummer som saknas eller hoppar.</p>
+        </div>
+        <div class="card step-card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.8v11.4"/><path d="M7.6 10.9l4.4 4.5 4.4-4.5"/><path d="M4.2 19.6h15.6"/></svg>
+          <p>Klicka på <strong>Exportera</strong>. Filen (.si) laddas ner och kan läsas in i bokföringsprogrammet eller skickas till konsulten.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h2>Om SIE</h2>
-  <p>SIE är den svenska standarden för att flytta bokföring mellan program. Siekoll skriver filer av typ 4 (verifikationer, för import), kodade som standarden kräver, med alla konton som används så att programmet kan lägga upp dem som saknas. Kostnadsställe och projekt följer med som SIE-dimensioner.</p>
+  <section class="section tight">
+    <div class="container">
+      <div class="grid cols-2">
+        <div class="card plan">
+          <h3>Gratis</h3>
+          <ul>
+            <li>Kontroll av bladet, så många gånger du vill</li>
+            <li>Mallblad med rätt rubriker och exempel</li>
+            <li>Läs in en SIE-fil som ett blad</li>
+            <li>Kontroll av personnummer, organisationsnummer och OCR-nummer</li>
+            <li>Export av filer med upp till 20 verifikationer</li>
+          </ul>
+        </div>
+        <div class="card plan plan-licens">
+          <h3>Licens</h3>
+          <p class="price">19 USD per år</p>
+          <p class="note">Cirka 199 kr. Moms läggs till vid köpet.</p>
+          <ul>
+            <li>Export utan gräns för antal verifikationer</li>
+            <li>Gäller för dig, i upp till tre webbläsare</li>
+            <li>Ångerrätt 14 dagar</li>
+          </ul>
+          <div class="actions">
+            <a class="btn primary" href="https://sheetgrab.lemonsqueezy.com/checkout/buy/f310b253-16b0-4034-ae06-d1597c43288b" rel="noopener" data-checkout>Köp licens</a>
+          </div>
+          <p class="note">Köpet sker hos Lemon Squeezy. Nyckeln kommer med kvittot och klistras in under Export i panelen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h2>Vanliga frågor</h2>
-  <div class="faq">
-    <h3>Vilka program kan läsa filen?</h3>
-    <p>Alla program som läser SIE 4, bland andra Fortnox, Visma eEkonomi, Bokio och Björn Lundén. Redovisningskonsulter läser in filen i sitt eget program.</p>
-    <h3>Lämnar mina siffror kalkylarket?</h3>
-    <p>Nej. Kontrollen och filen skapas i ditt eget Google-konto. Det enda som skickas vidare är licensnyckeln, till licensservern, när du aktiverar eller kontrollerar en licens.</p>
-    <h3>Vad händer om bokföringsprogrammet inte tar emot filen?</h3>
-    <p>Skicka filen och felmeddelandet till <a href="mailto:Aveltrum@gmail.com">Aveltrum@gmail.com</a>, så rättar vi. Har du en licens och det inte går att lösa får du pengarna tillbaka.</p>
-  </div>
+  <section class="section" id="installera">
+    <div class="container">
+      <div class="install-block split">
+        <div>
+          <h2>Installera</h2>
+          <p>Siekoll finns på Google Workspace Marketplace. Öppna ett kalkylark, välj <strong>Tillägg → Hämta tillägg</strong> och sök på Siekoll, eller använd knappen nedan.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://workspace.google.com/marketplace/search/Siekoll" rel="noopener" data-marketplace>Öppna i Google Workspace Marketplace</a>
+          </div>
+          <p class="note">Tillägget ber bara om att läsa och skriva i det kalkylark där det körs, visa sin panel och kontakta licensservern. Inga andra behörigheter.</p>
+        </div>
+        <figure class="frame install-figure">
+          <img src="assets/panel-export.webp" alt="Siekolls panel på fliken Export: rubriken Exportera SIE-fil, företaget Exempel Måleri AB med räkenskapsår 2026-01-01 till 2026-12-31, knappen Skapa och ladda ner, och fältet Licensnyckel med knapparna Aktivera och Ta bort." width="1536" height="738">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h2>Om SIE</h2>
+        <p>SIE är den svenska standarden för att flytta bokföring mellan program. Siekoll skriver filer av typ 4 (verifikationer, för import), kodade som standarden kräver, med alla konton som används så att programmet kan lägga upp dem som saknas. Kostnadsställe och projekt följer med som SIE-dimensioner.</p>
+      </div>
+      <div>
+<pre>#FLAGGA 0
+#FORMAT PC8
+#SIETYP 4
+#FNAMN "Exempel Måleri AB"
+#RAR 0 20260101 20261231
+#KONTO 1930 "Företagskonto"
+#KONTO 6250 "Porto"
+#VER "A" "1" 20260115 "Porto"
+{
+   #TRANS 6250 {} 800.00
+   #TRANS 2640 {} 200.00
+   #TRANS 1930 {} -1000.00
+}</pre>
+        <p class="small">Ur en fil som Siekoll skrev den 23 oktober 2026.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container narrow faq">
+      <h2>Vanliga frågor</h2>
+      <div class="qa">
+        <h3>Vilka program kan läsa filen?</h3>
+        <p>Alla program som läser SIE 4, bland andra Fortnox, Visma eEkonomi, Bokio och Björn Lundén. Redovisningskonsulter läser in filen i sitt eget program.</p>
+      </div>
+      <div class="qa">
+        <h3>Lämnar mina siffror kalkylarket?</h3>
+        <p>Nej. Kontrollen och filen skapas i ditt eget Google-konto. Det enda som skickas vidare är licensnyckeln, till licensservern, när du aktiverar eller kontrollerar en licens.</p>
+      </div>
+      <div class="qa">
+        <h3>Vad händer om bokföringsprogrammet inte tar emot filen?</h3>
+        <p>Skicka filen och felmeddelandet till <a href="mailto:Aveltrum@gmail.com">Aveltrum@gmail.com</a>, så rättar vi. Har du en licens och det inte går att lösa får du pengarna tillbaka.</p>
+      </div>
+    </div>
+  </section>
 </main>
-<footer>
-  <div class="inner">
+<footer class="site-footer">
+  <div class="container">
     <span>Siekoll · <a href="mailto:Aveltrum@gmail.com">Aveltrum@gmail.com</a></span>
     <span><a href="integritet.html">Integritetspolicy</a> · <a href="villkor.html">Villkor</a> · Inga kakor, ingen spårning</span>
   </div>

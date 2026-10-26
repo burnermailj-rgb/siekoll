@@ -5,73 +5,98 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bokföring för förening i Google Kalkylark – gratis mall för kassören</title>
 <meta name="description" content="Gratis bokföringsmall för ideell förening i Google Kalkylark, med kontoplan och steg för steg. Kontrollera inför årsmötet och lämna en SIE-fil till revisorn.">
+<link rel="canonical" href="https://siekoll.se/bokforing-for-forening.html">
+<link rel="preload" href="assets/fonts/instrument-sans-normal-400-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="assets/favicon.png">
 </head>
 <body>
 <a class="skip" href="#innehall">Hoppa till innehållet</a>
-<header class="top">
-  <div class="inner">
+<header class="site-header">
+  <div class="container">
     <a class="brand" href="index.html"><img class="mark" src="assets/mark.svg" alt="" width="28" height="28">Siekoll</a>
-    <nav class="main" aria-label="Huvudmeny">
+    <nav class="nav" aria-label="Huvudmeny">
       <a href="bokforing-i-google-kalkylark.html">Guide</a>
-      <a href="bokforing-for-forening.html">Förening</a>
+      <a href="bokforing-for-forening.html" aria-current="page">Förening</a>
       <a href="integritet.html">Integritet</a>
     </nav>
+    <a class="btn primary header-action" href="index.html#installera">Installera</a>
   </div>
 </header>
 <main id="innehall">
-  <h1>Bokföring för förening i Google Kalkylark</h1>
-  <p class="lead">Du har blivit kassör. Någon lämnade över en Excel-fil, en pärm och ett bankkonto.</p>
-  <p>Det här är den enkla vägen: en mall som håller ordning på föreningens pengar, ett sätt att kontrollera att allt stämmer inför årsmötet, och en fil som revisorn och nästa kassör kan läsa in i vilket program som helst.</p>
+  <section class="page-head">
+    <div class="container narrow">
+      <h1>Bokföring för förening i Google Kalkylark</h1>
+      <p class="lead">Du har blivit kassör. Någon lämnade över en Excel-fil, en pärm och ett bankkonto.</p>
+      <p>Det här är den enkla vägen: en mall som håller ordning på föreningens pengar, ett sätt att kontrollera att allt stämmer inför årsmötet, och en fil som revisorn och nästa kassör kan läsa in i vilket program som helst.</p>
+    </div>
+  </section>
 
-  <h2>Hämta mallen</h2>
-  <div class="actions">
-    <a class="btn" href="https://docs.google.com/spreadsheets/d/1-lA7AFogrAUvcuW43jRGZzLfCwpSlTr2FoJPCRcEmI0/copy" rel="noopener">Kopiera föreningsmallen till din Google Drive</a>
-  </div>
-  <p>Mallen har ett blad för verifikationer, en kontoplan anpassad för föreningar (medlemsavgifter, bidrag, arrangemang, lokal, material) och två exempel.</p>
+  <section class="section">
+    <div class="container narrow article">
+      <div class="card template-card">
+        <h2>Hämta mallen</h2>
+        <div class="actions">
+          <a class="btn primary" href="https://docs.google.com/spreadsheets/d/1-lA7AFogrAUvcuW43jRGZzLfCwpSlTr2FoJPCRcEmI0/copy" rel="noopener">Kopiera föreningsmallen till din Google Drive</a>
+        </div>
+        <p>Mallen har ett blad för verifikationer, en kontoplan anpassad för föreningar (medlemsavgifter, bidrag, arrangemang, lokal, material) och två exempel.</p>
+      </div>
 
-  <h2>Så fungerar mallen</h2>
-  <p>Varje rad är en konteringsrad. En verifikation (en händelse: en inbetalning, en faktura, ett inköp) består av minst två rader som tillsammans går jämnt ut. Skriv verifikationsnummer, datum och text bara på första raden; raderna under hör till samma verifikation.</p>
-  <table>
-    <thead><tr><th>Vernr</th><th>Datum</th><th>Text</th><th>Konto</th><th class="num">Debet</th><th class="num">Kredit</th></tr></thead>
-    <tbody>
-      <tr><td>1</td><td>2026-02-03</td><td>Medlemsavgifter februari</td><td>1930</td><td class="num">4 500</td><td class="num"></td></tr>
-      <tr><td></td><td></td><td></td><td>3890</td><td class="num"></td><td class="num">4 500</td></tr>
-      <tr><td>2</td><td>2026-02-10</td><td>Hyra klubblokal februari</td><td>5010</td><td class="num">3 000</td><td class="num"></td></tr>
-      <tr><td></td><td></td><td></td><td>1930</td><td class="num"></td><td class="num">3 000</td></tr>
-    </tbody>
-  </table>
+      <h2>Så fungerar mallen</h2>
+      <p>Varje rad är en konteringsrad. En verifikation (en händelse: en inbetalning, en faktura, ett inköp) består av minst två rader som tillsammans går jämnt ut. Skriv verifikationsnummer, datum och text bara på första raden; raderna under hör till samma verifikation.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Vernr</th><th scope="col">Datum</th><th scope="col">Text</th><th scope="col">Konto</th><th scope="col" class="num">Debet</th><th scope="col" class="num">Kredit</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>2026-02-03</td><td>Medlemsavgifter februari</td><td>1930</td><td class="num">4 500</td><td class="num"></td></tr>
+            <tr><td></td><td></td><td></td><td>3890</td><td class="num"></td><td class="num">4 500</td></tr>
+            <tr><td>2</td><td>2026-02-10</td><td>Hyra klubblokal februari</td><td>5010</td><td class="num">3 000</td><td class="num"></td></tr>
+            <tr><td></td><td></td><td></td><td>1930</td><td class="num"></td><td class="num">3 000</td></tr>
+          </tbody>
+        </table>
+      </div>
 
-  <h2>De vanligaste händelserna i en förening</h2>
-  <p><strong>Medlemsavgift in på kontot.</strong> 1930 debet, 3890 Medlemsavgifter kredit.</p>
-  <p><strong>Bidrag från kommunen.</strong> 1930 debet, 3985 Erhållna bidrag kredit.</p>
-  <p><strong>Lokalhyra.</strong> 5010 debet, 1930 kredit.</p>
-  <p><strong>Inköp till ett arrangemang.</strong> 6071 (eller ett eget arrangemangskonto) debet, 1930 kredit.</p>
-  <p><strong>Swish-intäkter från en försäljning.</strong> 1930 debet, 3010 kredit.</p>
-  <p>En ideell förening är normalt inte momsregistrerad, så du bokför hela beloppen utan att dela upp momsen.</p>
+      <h2>De vanligaste händelserna i en förening</h2>
+      <ul class="pairs">
+        <li><strong>Medlemsavgift in på kontot.</strong> 1930 debet, 3890 Medlemsavgifter kredit.</li>
+        <li><strong>Bidrag från kommunen.</strong> 1930 debet, 3985 Erhållna bidrag kredit.</li>
+        <li><strong>Lokalhyra.</strong> 5010 debet, 1930 kredit.</li>
+        <li><strong>Inköp till ett arrangemang.</strong> 6071 (eller ett eget arrangemangskonto) debet, 1930 kredit.</li>
+        <li><strong>Swish-intäkter från en försäljning.</strong> 1930 debet, 3010 kredit.</li>
+      </ul>
+      <p>En ideell förening är normalt inte momsregistrerad, så du bokför hela beloppen utan att dela upp momsen.</p>
 
-  <h2>Inför årsmötet</h2>
-  <p>Årsmötet vill se en resultaträkning (intäkter minus kostnader) och en balansräkning (vad föreningen äger och är skyldig). Mallens sammanställningsblad räknar ut båda från verifikationerna. Kontrollera först att allt balanserar och att inga verifikationer saknas; Siekoll gör det med ett klick och pekar ut raden som behöver rättas. Kontrollen är gratis.</p>
+      <h2>Inför årsmötet</h2>
+      <p>Årsmötet vill se en resultaträkning (intäkter minus kostnader) och en balansräkning (vad föreningen äger och är skyldig). Mallens sammanställningsblad räknar ut båda från verifikationerna. Kontrollera först att allt balanserar och att inga verifikationer saknas; Siekoll gör det med ett klick och pekar ut raden som behöver rättas. Kontrollen är gratis.</p>
 
-  <h2>Revisorn och nästa kassör</h2>
-  <p>Revisorn vill ofta ha bokföringen som en SIE-fil, det svenska standardformatet som alla bokföringsprogram läser. Samma fil gör att nästa kassör kan byta till ett program utan att skriva in något på nytt. Med Siekoll skapar du filen direkt från mallen. Upp till 20 verifikationer är gratis; större filer kräver en licens (19 USD per år, cirka 199 kr), som föreningen kan betala.</p>
-  <div class="actions">
-    <a class="btn" href="index.html#installera">Installera Siekoll</a>
-  </div>
+      <h2>Revisorn och nästa kassör</h2>
+      <p>Revisorn vill ofta ha bokföringen som en SIE-fil, det svenska standardformatet som alla bokföringsprogram läser. Samma fil gör att nästa kassör kan byta till ett program utan att skriva in något på nytt. Med Siekoll skapar du filen direkt från mallen. Upp till 20 verifikationer är gratis; större filer kräver en licens (19 USD per år, cirka 199 kr), som föreningen kan betala.</p>
+      <div class="cta">
+        <div class="actions">
+          <a class="btn primary" href="index.html#installera">Installera Siekoll</a>
+        </div>
+      </div>
 
-  <h2>Vanliga frågor</h2>
-  <div class="faq">
-    <h3>Måste en ideell förening bokföra?</h3>
-    <p>En förening som bedriver näringsverksamhet, eller vars tillgångar överstiger en viss gräns, är bokföringsskyldig enligt bokföringslagen. Mindre föreningar är det ofta inte, men stadgarna och medlemmarna kräver i praktiken ordnade räkenskaper, och revisorn ska kunna granska dem. Mallen uppfyller det.</p>
-    <h3>Vilken kontoplan ska vi använda?</h3>
-    <p>BAS-kontoplanen, som mallen bygger på, används av de flesta program. Det gör överlämning och byte av program enkelt.</p>
-    <h3>Vad händer med gamla år?</h3>
-    <p>Spara varje räkenskapsår som ett eget kalkylark eller blad. Ändra aldrig i ett avslutat år.</p>
-  </div>
+      <h2>Vanliga frågor</h2>
+      <div class="faq">
+        <div class="qa">
+          <h3>Måste en ideell förening bokföra?</h3>
+          <p>En förening som bedriver näringsverksamhet, eller vars tillgångar överstiger en viss gräns, är bokföringsskyldig enligt bokföringslagen. Mindre föreningar är det ofta inte, men stadgarna och medlemmarna kräver i praktiken ordnade räkenskaper, och revisorn ska kunna granska dem. Mallen uppfyller det.</p>
+        </div>
+        <div class="qa">
+          <h3>Vilken kontoplan ska vi använda?</h3>
+          <p>BAS-kontoplanen, som mallen bygger på, används av de flesta program. Det gör överlämning och byte av program enkelt.</p>
+        </div>
+        <div class="qa">
+          <h3>Vad händer med gamla år?</h3>
+          <p>Spara varje räkenskapsår som ett eget kalkylark eller blad. Ändra aldrig i ett avslutat år.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
-<footer>
-  <div class="inner">
+<footer class="site-footer">
+  <div class="container">
     <span>Siekoll · <a href="mailto:Aveltrum@gmail.com">Aveltrum@gmail.com</a></span>
     <span><a href="integritet.html">Integritetspolicy</a> · <a href="villkor.html">Villkor</a> · Inga kakor, ingen spårning</span>
   </div>
